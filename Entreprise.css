@@ -1,0 +1,105 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    background-color: darkgreen;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+#rechercher {
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: black;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: crimson;
+    margin-left: 50px;
+}
+
+main {
+    background-color: lightblue;
+    padding-top: 0px;
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: crimson;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+hr {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.directrice {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    white-space: normal;
+}
+
+.equipe {
+    display: grid;
+    justify-content: space-around;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    white-space: normal;
+}
+
+.pics {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: darkgreen;
+    color: white;
+    margin-top: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
