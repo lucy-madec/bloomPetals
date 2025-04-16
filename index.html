@@ -3,103 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BloomPetals</title>
+    <meta name="description" content="BloomPetals - Artisans floraux pour vos événements spéciaux. Bouquets personnalisés, décoration florale et ateliers créatifs.">
+    <meta name="keywords" content="fleurs, bouquets, mariage, événements, décoration florale, ateliers floraux">
+    <title>BloomPetals | Artisans Floraux</title>
     <link rel="stylesheet" href="Accueil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">BloomPetals</span></a>
+            </div>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="entreprise.html">Entreprise</a></li>
-                <li><a href="Réalisations.html">Réalisations</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="entreprise.html"><i class="fas fa-building"></i> Entreprise</a></li>
+                <li><a href="Réalisations.html"><i class="fas fa-images"></i> Réalisations</a></li>
+                <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <section id="rechercher">
-                <input type="text" placeholder="Rechercher">
-                <button type="submit"><img src="Loupe rechercher.png" alt="Rechercher" width="10" height="10"></button>
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit"><i class="fas fa-search"></i></button>
             </section>
         </nav>
     </header>
     <main>
-        <h1>💐BloomPetals🥀</h1>
-        <p id="description"><i>Chez BloomPetals, nous croyons que chaque célébration mérite d'être parée de la beauté
-                naturelle des fleurs🌺. Nous sommes une entreprise passionnée et créative spécialisée dans
+        <section class="hero">
+            <h1>BloomPetals</h1>
+            <p id="description">Chez BloomPetals, nous croyons que chaque célébration mérite d'être parée de la beauté
+                naturelle des fleurs <i class="fas fa-flower"></i>. Nous sommes une entreprise passionnée et créative spécialisée dans
                 la confection de magnifiques bouquets floraux pour embellir vos événements spéciaux. Que
-                ce soit un mariage💍, un anniversaire🎂, une réception ou toute autre occasion festive🎉, nos
+                ce soit un mariage <i class="fas fa-ring"></i>, un anniversaire <i class="fas fa-birthday-cake"></i>, une réception ou toute autre occasion festive <i class="fas fa-glass-cheers"></i>, nos
                 artisans floraux talentueux travaillent avec dévouement pour créer des arrangements
-                uniques et époustouflants qui émerveilleront vos invités.</i></p>
-        <hr>
-        <section class="images">
-            <img src="fleur1.jpg" alt="bouquet de fleur 1" width="200">
-            <img src="fleur2.jpg" alt="bouquet de fleur 2" width="200">
-            <img src="fleur3.jpg" alt="bouquet de fleur 3" width="200">
-            <img src="fleur4.jpg" alt="bouquet de fleur 4" width="200">
+                uniques et époustouflants qui émerveilleront vos invités.</p>
+            <a href="Contact.html" class="cta-button">Demander un devis <i class="fas fa-arrow-right"></i></a>
         </section>
+        
         <hr>
-        <h2>Notre engagement</h2>
-        <p id="engagement">Nous nous engageons à apporter une touche florale élégante et raffinée à chaque
-            événement. Chaque bouquet que nous créons est un mélange harmonieux de couleurs
-            vibrantes, de textures luxuriantes et d'arômes enivrants. Notre équipe expérimentée
-            collabore étroitement avec vous pour comprendre vos besoins et vos préférences, puis
-            transforme ces idées en arrangements floraux exceptionnels qui complètent parfaitement
-            l'ambiance de votre fête.</p>
+        
+        <section class="gallery">
+            <h2 class="section-title">Nos créations</h2>
+            <div class="images">
+                <div class="image-card">
+                    <img src="images/fleur1.jpg" alt="bouquet de fleur 1" loading="lazy">
+                    <div class="image-overlay">
+                        <p>Bouquet Élégance</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/fleur2.jpg" alt="bouquet de fleur 2" loading="lazy">
+                    <div class="image-overlay">
+                        <p>Collection Mariage</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/fleur3.jpg" alt="bouquet de fleur 3" loading="lazy">
+                    <div class="image-overlay">
+                        <p>Arrangement Saisonnier</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/fleur4.jpg" alt="bouquet de fleur 4" loading="lazy">
+                    <div class="image-overlay">
+                        <p>Décoration Événementielle</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        <section class="engagement">
+            <h2><i class="fas fa-heart"></i> Notre engagement</h2>
+            <p id="engagement">Nous nous engageons à apporter une touche florale élégante et raffinée à chaque
+                événement. Chaque bouquet que nous créons est un mélange harmonieux de couleurs
+                vibrantes, de textures luxuriantes et d'arômes enivrants. Notre équipe expérimentée
+                collabore étroitement avec vous pour comprendre vos besoins et vos préférences, puis
+                transforme ces idées en arrangements floraux exceptionnels qui complètent parfaitement
+                l'ambiance de votre fête.</p>
+            <div class="engagement-icons">
+                <div class="icon-box">
+                    <i class="fas fa-leaf"></i>
+                    <p>Matériaux écologiques</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-truck"></i>
+                    <p>Livraison rapide</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-medal"></i>
+                    <p>Qualité garantie</p>
+                </div>
+            </div>
+        </section>
 
-        <h2>Pourquoi choisir BloomPetals ?</h2>
-        <section id="choix">
-            <ul>
-                <li><span class="color"><b>Créativité Illimitée :</b></span> Nous repoussons les limites de la
-                    créativité pour concevoir des
-                    bouquets uniques et mémorables qui ajoutent une touche magique à votre
-                    événement.</li>
-                <li><span class="color"><b>Fleurs Fraîches et Durables :</b></span> Nous sélectionnons uniquement les
-                    fleurs les plus
-                    fraîches et de la plus haute qualité pour garantir la beauté de nos créations du début
-                    à la fin de votre fête.</li>
-                <li><span class="color"><b>Service Personnalisé :</b></span> Notre équipe dévouée est à votre écoute à
-                    chaque étape,
-                    offrant un service personnalisé pour répondre à vos besoins spécifiques et surpasser
-                    vos attentes.</li>
-                <li><span class="color"><b>Ponctualité et Professionnalisme :</b></span> Nous sommes fiers de notre
-                    ponctualité et de
-                    notre professionnalisme. Nous livrons nos créations à temps et installons chaque
-                    arrangement avec soin et précision.</li>
-            </ul>
+        <section class="pourquoi-choisir">
+            <h2><i class="fas fa-check-circle"></i> Pourquoi choisir BloomPetals ?</h2>
+            <div id="choix">
+                <div class="avantage-card">
+                    <div class="avantage-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3><span class="color">Créativité Illimitée</span></h3>
+                    <p>Nous repoussons les limites de la créativité pour concevoir des
+                        bouquets uniques et mémorables qui ajoutent une touche magique à votre
+                        événement.</p>
+                </div>
+                
+                <div class="avantage-card">
+                    <div class="avantage-icon"><i class="fas fa-seedling"></i></div>
+                    <h3><span class="color">Fleurs Fraîches et Durables</span></h3>
+                    <p>Nous sélectionnons uniquement les fleurs les plus
+                        fraîches et de la plus haute qualité pour garantir la beauté de nos créations du début
+                        à la fin de votre fête.</p>
+                </div>
+                
+                <div class="avantage-card">
+                    <div class="avantage-icon"><i class="fas fa-hands-helping"></i></div>
+                    <h3><span class="color">Service Personnalisé</span></h3>
+                    <p>Notre équipe dévouée est à votre écoute à chaque étape,
+                        offrant un service personnalisé pour répondre à vos besoins spécifiques et surpasser
+                        vos attentes.</p>
+                </div>
+                
+                <div class="avantage-card">
+                    <div class="avantage-icon"><i class="fas fa-clock"></i></div>
+                    <h3><span class="color">Ponctualité et Professionnalisme</span></h3>
+                    <p>Nous sommes fiers de notre ponctualité et de
+                        notre professionnalisme. Nous livrons nos créations à temps et installons chaque
+                        arrangement avec soin et précision.</p>
+                </div>
+            </div>
         </section>
         <hr>
-        <h2>Nos services</h2>
-        <section id="services">
-            <ol>
-                <li><span class="color"><b> Création de bouquets personnalisés :</b></span> BloomPetals offre un service
-                    de création de
-                    bouquets floraux entièrement personnalisés pour toutes les occasions. Que ce soit pour un
-                    mariage élégant, un anniversaire chaleureux ou un événement d'entreprise sophistiqué,
-                    notre équipe d'artisans floraux talentueux travaille en étroite collaboration avec les clients.
-                    pour concevoir des arrangements sur mesure, adaptés à leurs goûts et à l'ambiance de
-                    l'événement.</li>
-                <li><span class="color"><b>Décoration Florale d'Événements :</b></span> Notre équipe de professionnels
-                    se spécialise dans
-                    la décoration florale d'événements. Nous transformons les lieux de fêtes en espaces
-                    enchanteurs en utilisant des fleurs fraîches et luxuriantes. Des centres de table élégants aux
-                    arches florales majestueuses, nous concevons des décors floraux qui éblouissent et
-                    captivent les invités. Notre service comprend également la livraison, l'installation et la
-                    décoration sur place pour garantir une expérience sans stress pour nos clients.</li>
-                <li><span class="color"><b>Ateliers de Composition Florale :</b></span> En plus de nos services de
-                    décoration et de création
-                    de bouquets, BloomPetals propose des ateliers de composition florale interactifs. Ces
-                    ateliers sont parfaits pour les amateurs de fleurs et les passionnés de design floral. Nos
-                    experts partagent leurs connaissances et leurs compétences, guidant les participants dans
-                    la création de leurs propres arrangements floraux. C'est une expérience enrichissante et
-                    ludique, idéale pour les événements d'entreprise, les enterrements de vie de jeune fille ou
-                    les fêtes privées. Les participants repartent avec leurs créations florales uniques et des
-                    souvenirs mémorables de l'atelier.</li>
-            </ol>
+        <section class="services">
+            <h2><i class="fas fa-concierge-bell"></i> Nos services</h2>
+            <div id="services">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-gift"></i></div>
+                    <h3><span class="color">Création de bouquets personnalisés</span></h3>
+                    <p>BloomPetals offre un service de création de
+                        bouquets floraux entièrement personnalisés pour toutes les occasions. Que ce soit pour un
+                        mariage élégant, un anniversaire chaleureux ou un événement d'entreprise sophistiqué,
+                        notre équipe d'artisans floraux talentueux travaille en étroite collaboration avec les clients
+                        pour concevoir des arrangements sur mesure, adaptés à leurs goûts et à l'ambiance de
+                        l'événement.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-archway"></i></div>
+                    <h3><span class="color">Décoration Florale d'Événements</span></h3>
+                    <p>Notre équipe de professionnels se spécialise dans
+                        la décoration florale d'événements. Nous transformons les lieux de fêtes en espaces
+                        enchanteurs en utilisant des fleurs fraîches et luxuriantes. Des centres de table élégants aux
+                        arches florales majestueuses, nous concevons des décors floraux qui éblouissent et
+                        captivent les invités.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3><span class="color">Ateliers de Composition Florale</span></h3>
+                    <p>En plus de nos services de décoration et de création
+                        de bouquets, BloomPetals propose des ateliers de composition florale interactifs. Ces
+                        ateliers sont parfaits pour les amateurs de fleurs et les passionnés de design floral. Nos
+                        experts partagent leurs connaissances et leurs compétences, guidant les participants dans
+                        la création de leurs propres arrangements floraux.</p>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3>Prêt à embellir votre événement ?</h3>
+                <p>Contactez-nous dès aujourd'hui pour discuter de vos besoins floraux</p>
+                <a href="Contact.html" class="cta-button">Nous contacter <i class="fas fa-paper-plane"></i></a>
+            </div>
         </section>
     </main>
+    
     <footer>
-        © 2023
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>BloomPetals</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Rue des Fleurs, 75000 Paris</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@bloompetals.fr</p>
+            </div>
+            
+            <div class="footer-social">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Inscrivez-vous pour recevoir nos actualités et offres spéciales</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 BloomPetals - Tous droits réservés</p>
+        </div>
     </footer>
+    
+    <script>
+        // Script pour ajouter des effets interactifs
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation au défilement
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+            
+            const animatedElements = document.querySelectorAll('.service-card, .avantage-card, .image-card');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Gestion du formulaire de newsletter
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    alert('Merci de vous être inscrit avec l\'adresse : ' + email);
+                    this.reset();
+                });
+            }
+        });
+    </script>
 </body>
