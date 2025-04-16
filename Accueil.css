@@ -537,8 +537,11 @@ hr {
 }
 
 .logo-text {
-    color: var(--primary-color);
+    color: var(--accent-color);
+    font-weight: bold;
     transition: var(--transition);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 2px;
 }
 
 .logo a:hover .logo-text {
