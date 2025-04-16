@@ -182,6 +182,12 @@ hr {
     transition: var(--transition);
 }
 
+.logo-image {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+}
+
 .logo a:hover .logo-text {
     color: var(--accent-color);
 }
@@ -252,7 +258,7 @@ footer i {
 }
 
 .social-icons a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -261,6 +267,7 @@ footer i {
     border-radius: 50%;
     color: white;
     transition: var(--transition);
+    text-decoration: none;
 }
 
 .social-icons a:hover {
