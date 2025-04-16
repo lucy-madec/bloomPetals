@@ -97,9 +97,227 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+}
+
+/* Styles spécifiques à la page Entreprise */
+
+/* En-tête de l'équipe */
+.team-header {
+    text-align: center;
+    padding: 20px 0 40px;
+}
+
+.team-intro {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Section directrice */
+.directrice-section {
+    margin-bottom: 50px;
+}
+
+.directrice {
+    display: flex;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin: 30px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.directrice.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.directrice-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.directrice:hover .profile-img {
+    transform: scale(1.05);
+}
+
+.directrice-info {
+    flex: 2;
+    padding: 30px;
+}
+
+.directrice-info h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    position: relative;
+    white-space: normal;
+    margin-left: 0;
+}
+
+.role {
+    display: block;
+    font-size: 1rem;
+    color: var(--accent-color);
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Section équipe */
+.team-section {
+    margin: 50px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-member {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.team-member.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+}
+
+.pics {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover .pics {
+    transform: scale(1.05);
+}
+
+.member-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.member-info h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    white-space: normal;
+    margin-left: 0;
+}
+
+/* Section rejoindre l'équipe */
+.join-team {
+    text-align: center;
+    background-color: var(--light-color);
+    padding: 50px 30px;
+    border-radius: 8px;
+    margin: 50px 0 20px;
+}
+
+.join-team h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+    padding-left: 0;
+}
+
+.join-team h2::before {
+    display: none;
+}
+
+.join-team p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .directrice {
+        flex-direction: column;
+    }
+    
+    .directrice-image {
+        min-width: 100%;
+        height: 300px;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+    }
+    
+    .member-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .pics {
+        width: 100%;
+    }
 }

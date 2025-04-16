@@ -2,66 +2,213 @@
 <html lang="fr">
 
 <head>
-    <title>BloomPetals</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="BloomPetals"
-        content="bouquets floraux, évènements spéciaux, mariage, anniversaire, réception, occasion festive, fleurs, bouquet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BloomPetals - Contactez notre équipe d'artisans floraux pour discuter de vos projets floraux et obtenir un devis personnalisé.">
+    <meta name="keywords" content="fleurs, bouquets, contact, devis, formulaire, fleuriste">
+    <title>Contact | BloomPetals</title>
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="Contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">BloomPetals</span></a>
+            </div>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="entreprise.html">Entreprise</a></li>
-                <li><a href="Réalisations.html">Réalisations</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="entreprise.html"><i class="fas fa-building"></i> Entreprise</a></li>
+                <li><a href="Réalisations.html"><i class="fas fa-images"></i> Réalisations</a></li>
+                <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <section id="rechercher">
-                <input type="text" placeholder="Rechercher" class="rechercher">
-                <button type="submit"><img src="Loupe rechercher.png" alt="Rechercher" width="10" height="10"
-                        class="rechercher"></button>
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit"><i class="fas fa-search"></i></button>
             </section>
         </nav>
     </header>
     <main>
-        <h1>💐BloomPetals🥀</h1>
-        <h2>Formulaire de contact</h2>
-        <hr>
-        <form action="get" method="post">
-            <label for="civilite">Civilité :</label>
-            <select id="civilite" name="civilite">
-                <option value="Vide"></option>
-                <option value="Monsieur">Monsieur</option>
-                <option value="Madame">Madame</option>
-            </select>
-            <br>
-
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required>
-            <br>
-
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" required>
-            <br>
-
-            <label for="adresse">Adresse postale :</label>
-            <textarea id="adresse" name="adresse" rows="4" required></textarea>
-            <br>
-
-            <label for="politique">Accepter les politiques de confidentialité :</label>
-            <input type="checkbox" id="politique" name="politique" required>
-            <br>
-
-            <input type="submit" value="Valider">
-        </form>
+        <section class="contact-header">
+            <h1>Contactez-nous</h1>
+            <p class="contact-intro">Vous avez un projet floral en tête ? Nous serions ravis de vous aider à le réaliser. Remplissez le formulaire ci-dessous et notre équipe vous contactera dans les plus brefs délais.</p>
+        </section>
+        
+        <div class="contact-container">
+            <section class="contact-info">
+                <h2><i class="fas fa-map-marker-alt"></i> Nos coordonnées</h2>
+                
+                <div class="info-item">
+                    <i class="fas fa-home"></i>
+                    <div>
+                        <h3>Adresse</h3>
+                        <p>123 Rue des Fleurs<br>75000 Paris, France</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Téléphone</h3>
+                        <p>+33 1 23 45 67 89</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>contact@bloompetals.fr</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Horaires d'ouverture</h3>
+                        <p>Lundi - Vendredi: 9h - 18h<br>Samedi: 10h - 16h<br>Dimanche: Fermé</p>
+                    </div>
+                </div>
+                
+                <div class="social-contact">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact-form-section">
+                <h2><i class="fas fa-paper-plane"></i> Formulaire de contact</h2>
+                
+                <form class="contact-form" action="get" method="post">
+                    <div class="form-group">
+                        <label for="civilite">Civilité</label>
+                        <select id="civilite" name="civilite" required>
+                            <option value="" disabled selected>Choisir</option>
+                            <option value="Monsieur">Monsieur</option>
+                            <option value="Madame">Madame</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="adresse">Adresse postale</label>
+                        <textarea id="adresse" name="adresse" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou posez-nous vos questions..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="politique" name="politique" required>
+                        <label for="politique">J'accepte les <a href="#">politiques de confidentialité</a></label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Envoyer le message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </section>
+        </div>
+        
+        <section class="map-section">
+            <h2>Nous trouver</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85836507928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1650000000000!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
+    
     <footer>
-        © 2023
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>BloomPetals</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Rue des Fleurs, 75000 Paris</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@bloompetals.fr</p>
+            </div>
+            
+            <div class="footer-social">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Inscrivez-vous pour recevoir nos actualités et offres spéciales</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p> 2023 BloomPetals - Tous droits réservés</p>
+        </div>
     </footer>
+    
+    <script>
+        // Script pour ajouter des effets interactifs
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation au défilement
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+            
+            const animatedElements = document.querySelectorAll('.info-item, .contact-form-section');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Validation du formulaire
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Merci pour votre message ! Nous vous contacterons très bientôt.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
 </body>

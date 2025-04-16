@@ -2,41 +2,213 @@
 <html lang="fr">
 
 <head>
-    <title>BloomPetals</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="BloomPetals"
-        content="bouquets floraux, évènements spéciaux, mariage, anniversaire, réception, occasion festive, fleurs, bouquet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BloomPetals - Découvrez nos plus belles réalisations florales pour mariages, événements et décorations.">
+    <meta name="keywords" content="fleurs, bouquets, réalisations, galerie, compositions florales, décoration florale">
+    <title>Nos Réalisations | BloomPetals</title>
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="Réalisations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">BloomPetals</span></a>
+            </div>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="entreprise.html">Entreprise</a></li>
-                <li><a href="Réalisations.html">Réalisations</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="entreprise.html"><i class="fas fa-building"></i> Entreprise</a></li>
+                <li><a href="Réalisations.html"><i class="fas fa-images"></i> Réalisations</a></li>
+                <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <section id="rechercher">
-                <input type="text" placeholder="Rechercher">
-                <button type="submit"><img src="Loupe rechercher.png" alt="Rechercher" width="10" height="10"></button>
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit"><i class="fas fa-search"></i></button>
             </section>
         </nav>
     </header>
     <main>
+        <section class="gallery-header">
+            <h1>Nos Réalisations</h1>
+            <p class="gallery-intro">Découvrez notre portfolio de créations florales pour tous types d'événements. Chaque arrangement est conçu avec passion et attention aux détails pour créer une expérience visuelle unique.</p>
+        </section>
+        
+        <section class="gallery-filters">
+            <h2>Explorez par catégorie</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="mariage">Mariages</button>
+                <button class="filter-btn" data-filter="evenement">Evénements</button>
+                <button class="filter-btn" data-filter="bouquet">Bouquets</button>
+            </div>
+        </section>
+        
         <div class="mosaique">
-            <div class="item"><img src="fleur5.jpg" alt="Réalisation 1" class="image"></div>
-            <div class="item"><img src="fleur6.jpg" alt="Réalisation 2" class="image"></div>
-            <div class="item"><img src="fleur7.jpg" alt="Réalisation 3" class="image"></div>
-            <div class="item"><img src="fleur8.jpg" alt="Réalisation 4" class="image"></div>
-            <div class="item"><img src="fleur9.jpg" alt="Réalisation 5" class="image"></div>
-            <div class="item"><img src="fleur10.jpg" alt="Réalisation 6" class="image"></div>
+            <div class="item" data-category="mariage">
+                <img src="images/fleur5.jpg" alt="Bouquet de mariée" class="image">
+                <div class="item-overlay">
+                    <h3>Bouquet de Mariée</h3>
+                    <p>Composition florale délicate pour un mariage de printemps</p>
+                </div>
+            </div>
+            <div class="item" data-category="evenement">
+                <img src="images/fleur6.jpg" alt="Décoration de table" class="image">
+                <div class="item-overlay">
+                    <h3>Centre de Table</h3>
+                    <p>Arrangement élégant pour réception de gala</p>
+                </div>
+            </div>
+            <div class="item" data-category="bouquet">
+                <img src="images/fleur7.jpg" alt="Bouquet anniversaire" class="image">
+                <div class="item-overlay">
+                    <h3>Bouquet Festif</h3>
+                    <p>Composition colorée pour célébration d'anniversaire</p>
+                </div>
+            </div>
+            <div class="item" data-category="mariage">
+                <img src="images/fleur8.jpg" alt="Arche florale" class="image">
+                <div class="item-overlay">
+                    <h3>Arche Florale</h3>
+                    <p>Décoration majestueuse pour cérémonie en plein air</p>
+                </div>
+            </div>
+            <div class="item" data-category="evenement">
+                <img src="images/fleur9.jpg" alt="Décoration événement" class="image">
+                <div class="item-overlay">
+                    <h3>Décoration Thématique</h3>
+                    <p>Arrangement floral pour événement d'entreprise</p>
+                </div>
+            </div>
+            <div class="item" data-category="bouquet">
+                <img src="images/fleur10.jpg" alt="Bouquet saisonnier" class="image">
+                <div class="item-overlay">
+                    <h3>Bouquet Saisonnier</h3>
+                    <p>Composition avec fleurs de saison</p>
+                </div>
+            </div>
         </div>
-
+        
+        <section class="testimonials">
+            <h2>Ce que nos clients disent</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Les arrangements floraux créés par BloomPetals pour mon mariage étaient absolument magnifiques. Chaque détail était parfait !</p>
+                        <div class="testimonial-author">
+                            <strong>Sophie L.</strong>
+                            <span>Mariée satisfaite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Pour l'inauguration de notre entreprise, BloomPetals a créé des compositions qui ont impressionné tous nos invités. Un service exceptionnel !</p>
+                        <div class="testimonial-author">
+                            <strong>Marc D.</strong>
+                            <span>Directeur marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <h2>Envie de créer votre propre projet floral ?</h2>
+            <p>Contactez-nous pour discuter de vos idées et obtenir un devis personnalisé</p>
+            <a href="Contact.html" class="cta-button">Demander un devis <i class="fas fa-arrow-right"></i></a>
+        </section>
     </main>
+    
     <footer>
-        © 2023
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>BloomPetals</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Rue des Fleurs, 75000 Paris</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@bloompetals.fr</p>
+            </div>
+            
+            <div class="footer-social">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Inscrivez-vous pour recevoir nos actualités et offres spéciales</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p> 2023 BloomPetals - Tous droits réservés</p>
+        </div>
     </footer>
+    
+    <script>
+        // Script pour le filtrage des réalisations
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const items = document.querySelectorAll('.item');
+            
+            // Animation au défilement
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+            
+            const animatedElements = document.querySelectorAll('.item, .testimonial');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Filtrage des éléments
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Retirer la classe active de tous les boutons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Ajouter la classe active au bouton cliqué
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    items.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>

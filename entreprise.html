@@ -2,68 +2,175 @@
 <html lang="fr">
 
 <head>
-    <title>BloomPetals</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="BloomPetals"
-        content="bouquets floraux, évènements spéciaux, mariage, anniversaire, réception, occasion festive, fleurs, bouquet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BloomPetals - Découvrez notre équipe d'artisans floraux passionnés qui créent des bouquets uniques pour vos événements spéciaux.">
+    <meta name="keywords" content="fleurs, bouquets, équipe, fleuristes, artisans floraux, entreprise florale">
+    <title>Notre Équipe | BloomPetals</title>
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="Entreprise.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">BloomPetals</span></a>
+            </div>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="entreprise.html">Entreprise</a></li>
-                <li><a href="Réalisations.html">Réalisations</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="entreprise.html"><i class="fas fa-building"></i> Entreprise</a></li>
+                <li><a href="Réalisations.html"><i class="fas fa-images"></i> Réalisations</a></li>
+                <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <section id="rechercher">
-                <input type="text" placeholder="Rechercher">
-                <button type="submit"><img src="Loupe rechercher.png" alt="Rechercher" width="10" height="10"></button>
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit"><i class="fas fa-search"></i></button>
             </section>
         </nav>
     </header>
     <main>
-        <h1>💐BloomPetals🥀</h1>
-        <h2>Notre équipe</h2>
-        <hr>
-        <section class="directrice">
-            <img src="photo1.jpg" alt="Photo de Julie" width="200">
-            <h3>Julie :</h3>
-            <p>Notre directrice passionnée de la botanique, débordant de créativité et de soin, qui transforme chaque
-                visite en une expérience florale inoubliable pour vous.</p>
-            <img src="photo2.jpg" alt="Photo de Julie 2" width="100">
+        <section class="team-header">
+            <h1>Notre Équipe</h1>
+            <p class="team-intro">Découvrez les visages passionnés derrière BloomPetals. Notre équipe d'experts floraux est dévouée à créer des expériences florales exceptionnelles pour chacun de nos clients.</p>
         </section>
+        
+        <section class="directrice-section">
+            <h2><i class="fas fa-star"></i> Notre Directrice</h2>
+            <div class="directrice">
+                <div class="directrice-image">
+                    <img src="images/photo1.jpg" alt="Photo de Julie" class="profile-img">
+                </div>
+                <div class="directrice-info">
+                    <h3>Julie <span class="role">Fondatrice & Directrice</span></h3>
+                    <p>Notre directrice passionnée de la botanique, débordant de créativité et de soin, qui transforme chaque
+                    visite en une expérience florale inoubliable pour vous. Avec plus de 15 ans d'expérience dans l'art floral, Julie apporte une vision unique et innovante à chaque projet.</p>
+                    <div class="skills">
+                        <span class="skill-tag">Design Floral</span>
+                        <span class="skill-tag">Gestion</span>
+                        <span class="skill-tag">Innovation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <hr>
-        <section class="equipe">
-            <img class="pics" src="photo3.jpg" alt="Photo de Ambre" width="100" height="100">
-            <h3>Ambre :</h3>
-            <p>Notre comptable est une professionnelle méticuleuse et efficace, qui veille à la santé financière de
-                l'entreprise avec précision et dévouement, tout en cultivant un environnement propice à la croissance et
-                à l'épanouissement de la boutique.</p>
-            <img class="pics" src="photo4.jpg" alt="Photo de Zoé" width="100" height="100">
-            <h3>Zoé :</h3>
-            <p>Notre vendeuse en boutique est un rayon de soleil, vous accueillant avec un sourire chaleureux, offrant
-                des conseils attentionnés et des recommandations florales expertes pour créer des moments de bonheur à
-                travers la magie des fleurs.</p>
-            <img class="pics" src="photo5..jpg" alt="Photo de Léa" width="100" height="100">
-            <h3>Léa :</h3>
-            <p>Notre fleuriste est une artiste florale passionnée qui transforme des pétales en poésie, créant des
-                bouquets et des arrangements qui capturent la beauté éphémère de la nature, tout en apportant de la joie
-                et de l'émerveillement à chaque personne qui franchit la porte de la boutique.</p>
-            <img class="pics" src="photo6.jpg" alt="Photo de Emma et Loic" width="100" height="100">
-            <h3>Emma et Loic :</h3>
-            <p>Nos deux commerciaux sont des ambassadeurs dévoués de la beauté florale, utilisant leur charme et leur
-                expertise pour vous aider à exprimer vos émotions à travers des bouquets uniques, et contribuant ainsi à
-                vous épanouir de la boutique.</p>
+        
+        <section class="team-section">
+            <h2><i class="fas fa-users"></i> Notre Équipe</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/photo3.jpg" alt="Photo de Ambre" class="pics">
+                    </div>
+                    <div class="member-info">
+                        <h3>Ambre <span class="role">Comptable</span></h3>
+                        <p>Notre comptable est une professionnelle méticuleuse et efficace, qui veille à la santé financière de
+                        l'entreprise avec précision et dévouement, tout en cultivant un environnement propice à la croissance et
+                        à l'épanouissement de la boutique.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/photo4.jpg" alt="Photo de Zoé" class="pics">
+                    </div>
+                    <div class="member-info">
+                        <h3>Zoé <span class="role">Conseillère Vente</span></h3>
+                        <p>Notre vendeuse en boutique est un rayon de soleil, vous accueillant avec un sourire chaleureux, offrant
+                        des conseils attentionnés et des recommandations florales expertes pour créer des moments de bonheur à
+                        travers la magie des fleurs.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/photo5.jpg" alt="Photo de Léa" class="pics">
+                    </div>
+                    <div class="member-info">
+                        <h3>Léa <span class="role">Fleuriste Artiste</span></h3>
+                        <p>Notre fleuriste est une artiste florale passionnée qui transforme des pétales en poésie, créant des
+                        bouquets et des arrangements qui capturent la beauté éphémère de la nature, tout en apportant de la joie
+                        et de l'émerveillement à chaque personne qui franchit la porte de la boutique.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/photo6.jpg" alt="Photo de Emma et Loic" class="pics">
+                    </div>
+                    <div class="member-info">
+                        <h3>Emma & Loic <span class="role">Commerciaux</span></h3>
+                        <p>Nos deux commerciaux sont des ambassadeurs dévoués de la beauté florale, utilisant leur charme et leur
+                        expertise pour vous aider à exprimer vos émotions à travers des bouquets uniques, et contribuant ainsi à
+                        vous épanouir de la boutique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="join-team">
+            <h2>Rejoignez Notre Équipe</h2>
+            <p>Passionné(e) par les fleurs et le service client ? Nous sommes toujours à la recherche de talents pour rejoindre notre équipe dynamique.</p>
+            <a href="Contact.html" class="cta-button">Nous contacter <i class="fas fa-paper-plane"></i></a>
         </section>
     </main>
+    
     <footer>
-        © 2023
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>BloomPetals</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Rue des Fleurs, 75000 Paris</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@bloompetals.fr</p>
+            </div>
+            
+            <div class="footer-social">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Inscrivez-vous pour recevoir nos actualités et offres spéciales</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p> 2023 BloomPetals - Tous droits réservés</p>
+        </div>
     </footer>
+    
+    <script>
+        // Script pour ajouter des effets interactifs
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation au défilement
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+            
+            const animatedElements = document.querySelectorAll('.team-member, .directrice');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
