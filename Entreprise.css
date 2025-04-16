@@ -1,36 +1,4 @@
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px;
-    background-color: darkgreen;
-}
-
-ul {
-    display: flex;
-}
-
-li {
-    margin-right: 20px;
-    list-style-type: none;
-}
-
-a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-a:hover {
-    color: greenyellow;
-}
-
-#rechercher {
-    margin-right: 10px;
-}
+/* Styles spécifiques à la page Entreprise */
 
 h1 {
     text-align: center;
@@ -90,20 +58,9 @@ hr {
     justify-content: center;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: darkgreen;
-    color: white;
-    margin-top: 20px;
-}
+/* Fin des styles spécifiques */
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
+/* Fin des styles spécifiques à la page Entreprise */
 
 /* Styles spécifiques à la page Entreprise */
 
