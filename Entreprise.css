@@ -166,9 +166,9 @@ hr {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 40px;
+    margin: 30px 20px;
 }
 
 .team-member {
@@ -181,6 +181,7 @@ hr {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+    min-height: 250px;
 }
 
 .team-member.visible {
@@ -194,16 +195,19 @@ hr {
 }
 
 .member-image {
-    width: 150px;
+    width: 200px;
     height: auto;
     overflow: hidden;
 }
 
 .pics {
-    width: 150px;
-    height: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 0;
+    padding: 10px;
 }
 
 .team-member:hover .pics {
