@@ -220,8 +220,25 @@
     </footer>
     
     <script>
-        // Script pour ajouter des effets interactifs
         document.addEventListener('DOMContentLoaded', function() {
+            // Menu burger
+            const burgerMenu = document.querySelector('.burger-menu');
+            const nav = document.querySelector('nav ul');
+            
+            burgerMenu.addEventListener('click', function() {
+                this.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+
+            // Fermer le menu quand on clique sur un lien
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    burgerMenu.classList.remove('active');
+                    nav.classList.remove('active');
+                });
+            });
+
             // Animation au défilement
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -235,19 +252,7 @@
             animatedElements.forEach(el => {
                 observer.observe(el);
             });
-            
-            // Gestion du formulaire de newsletter
-            const newsletterForm = document.querySelector('.newsletter-form');
-            if (newsletterForm) {
-                newsletterForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const email = this.querySelector('input[type="email"]').value;
-                    alert('Merci de vous être inscrit avec l\'adresse : ' + email);
-                    this.reset();
-                });
-            }
         });
     </script>
-    <script src="script.js"></script>
 </body>
 </html>

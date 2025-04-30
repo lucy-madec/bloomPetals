@@ -168,11 +168,25 @@
     </footer>
     
     <script>
-        // Script pour le filtrage des réalisations
         document.addEventListener('DOMContentLoaded', function() {
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const items = document.querySelectorAll('.item');
+            // Menu burger
+            const burgerMenu = document.querySelector('.burger-menu');
+            const nav = document.querySelector('nav ul');
             
+            burgerMenu.addEventListener('click', function() {
+                this.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+
+            // Fermer le menu quand on clique sur un lien
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    burgerMenu.classList.remove('active');
+                    nav.classList.remove('active');
+                });
+            });
+
             // Animation au défilement
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -186,36 +200,7 @@
             animatedElements.forEach(el => {
                 observer.observe(el);
             });
-            
-            // Filtrage des éléments
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    // Retirer la classe active de tous les boutons
-                    filterBtns.forEach(btn => btn.classList.remove('active'));
-                    // Ajouter la classe active au bouton cliqué
-                    this.classList.add('active');
-                    
-                    const filter = this.getAttribute('data-filter');
-                    
-                    items.forEach(item => {
-                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                            item.style.display = 'block';
-                            setTimeout(() => {
-                                item.style.opacity = '1';
-                                item.style.transform = 'scale(1)';
-                            }, 50);
-                        } else {
-                            item.style.opacity = '0';
-                            item.style.transform = 'scale(0.8)';
-                            setTimeout(() => {
-                                item.style.display = 'none';
-                            }, 300);
-                        }
-                    });
-                });
-            });
         });
     </script>
-    <script src="script.js"></script>
 </body>
 </html>

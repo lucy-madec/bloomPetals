@@ -184,8 +184,25 @@
     </footer>
     
     <script>
-        // Script pour ajouter des effets interactifs
         document.addEventListener('DOMContentLoaded', function() {
+            // Menu burger
+            const burgerMenu = document.querySelector('.burger-menu');
+            const nav = document.querySelector('nav ul');
+            
+            burgerMenu.addEventListener('click', function() {
+                this.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+
+            // Fermer le menu quand on clique sur un lien
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    burgerMenu.classList.remove('active');
+                    nav.classList.remove('active');
+                });
+            });
+
             // Animation au défilement
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -199,18 +216,7 @@
             animatedElements.forEach(el => {
                 observer.observe(el);
             });
-            
-            // Validation du formulaire
-            const contactForm = document.querySelector('.contact-form');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Merci pour votre message ! Nous vous contacterons très bientôt.');
-                    this.reset();
-                });
-            }
         });
     </script>
-    <script src="script.js"></script>
 </body>
 </html>
